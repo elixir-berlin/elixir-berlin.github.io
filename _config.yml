@@ -6,7 +6,7 @@
 name: Berlin.ex
 
 # Short bio or description (displayed in the header)
-description: Programmer From Somewhere On Earth
+description: Elixir User Group in Berlin
 
 
 #
@@ -17,7 +17,7 @@ description: Programmer From Somewhere On Earth
 footer-links:
   dribbble:
   email:
-  facebook:
+  facebook: 237714459982331
   flickr:
   github: elixir-berlin
   instagram:
@@ -27,7 +27,7 @@ footer-links:
   twitter: ElixirBerlin
   stackoverflow: # your stackoverflow profile, e.g. "users/3807565/akshay"
   youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: # anything in your profile username that comes after plus.google.com/
+  googleplus: communities/107831462311035535095
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts
