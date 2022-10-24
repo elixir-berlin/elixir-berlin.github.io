@@ -15,19 +15,9 @@ description: Elixir User Group in Berlin
 
 # Includes an icon in the footer for each username you enter
 footer-links:
-  dribbble:
-  email:
-  facebook: 237714459982331
-  flickr:
+  meetup: elixir-berlin
   github: elixir-berlin
-  instagram:
-  linkedin:
-  pinterest:
-  rss: # just type anything here for a working RSS icon
   twitter: ElixirBerlin
-  stackoverflow: # your stackoverflow profile, e.g. "users/3807565/akshay"
-  youtube: # channel/<your_long_string> or user/<user-name>
-  googleplus: communities/107831462311035535095
 
 
 # Enter your Disqus shortname (not your username) to enable commenting on posts

@@ -20,19 +20,10 @@ html {
 body {
   background: $white;
   font: 18px/1.4 $helvetica;
-  color: $darkGray;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 800px;
-  padding: 0 10px;
-  width: 100%;
 }
 
 h1, h2, h3, h4, h5, h6 {
   font-family: $helveticaNeue;
-  color: $darkerGray;
   font-weight: bold;
 
   line-height: 1.7;
@@ -44,27 +35,16 @@ h1, h2, h3, h4, h5, h6 {
   }
 }
 
-h1 {
-  font-size: 30px;
-  color: $h1-color;
-  a {
-    color: inherit;
-  }
-}
-
 h2 {
   font-size: 24px;
-  color: $h2-color;
 }
 
 h3 {
   font-size: 20px;
-  color: $h3-color;
 }
 
 h4 {
   font-size: 18px;
-  color: $h4-color;
 }
 
 p {
@@ -72,12 +52,8 @@ p {
 }
 
 a {
-  color: $link-color;
   text-decoration: none;
 	cursor: pointer;
-  &:hover, &:active {
-    color: darken($link-color,20);
-  }
 }
 
 ul, ol {
@@ -120,17 +96,6 @@ img {
 
 .date {
   font-style: italic;
-  color: $gray;
-}
-
-// Specify the color of the selection
-::-moz-selection {
-  color: $black;
-  background: $lightGray;
-}
-::selection {
-  color: $black;
-  background: $lightGray;
 }
 
 .clearfix:before,
@@ -157,7 +122,6 @@ img {
 
 .masthead {
   padding: 20px 0;
-  border-bottom: 1px solid $lightGray;
 
   @include mobile {
     text-align: center;
@@ -193,27 +157,15 @@ img {
 
 .site-name {
   margin: 0;
-  color: $darkGray;
   cursor: pointer;
   font-family: $helveticaNeue;
   font-weight: 300;
-  font-size: 28px;
+  font-size: 250%;
   letter-spacing: 1px;
-}
-
-.site-description {
-  margin: -5px 0 0 0;
-  color: $white;
-  font-size: 16px;
-
-  @include mobile {
-    margin: 3px 0;
-  }
 }
 
 nav {
   float: right;
-  margin-top: 23px; 
   font-family: $helveticaNeue;
   font-size: 18px;
 
@@ -228,13 +180,11 @@ nav {
     margin-left: 20px;
     color: $white;
     text-align: right;
-    font-weight: 300;
     letter-spacing: 1px;
+    opacity: 80;
+    font-size: 90%;
+    text-transform: lowercase;
     
-    &:hover, &:active {
-      color: darken($navbar-hover-color,20);
-    }
-
     @include mobile {
       margin: 0 10px;
       color: $white;
@@ -261,7 +211,6 @@ nav {
     margin: 1.8em .8em;
     border-left: 2px solid $gray;
     padding: 0.1em 1em;
-    color: $gray;
     font-size: 22px;
     font-style: italic;
   }
@@ -286,6 +235,7 @@ nav {
 footer {
   padding: 20px 0;
   text-align: center;
+  background-color: black;
 }
 
 sup {

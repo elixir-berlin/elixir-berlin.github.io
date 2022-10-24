@@ -1,79 +1,76 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    {% include meta.html %}
+<head>
+  <title>{% if page.title %}{{ page.title }} – {% endif %}{{ site.name }} – {{ site.description }}</title>
 
-    <!--[if lt IE 9]>
+  {% include meta.html %}
+
+  <!--[if lt IE 9]>
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
 
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link href='https://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+  <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+  <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}"
+    href="{{ site.baseurl }}/feed.xml" />
+</head>
 
-  </head>
+<body>
 
-  <body>
-
-    <div class="intro-header">
+  <div class="intro-header">
+    <div class="side-by-side">
+      <div>
         <div class="wrapper-masthead">
-         <div class="container">
-           <header class="masthead clearfix">
-             <div class="site-info">
-               <h1 class="site-name"><a href="{{ site.baseurl }}/">Elixir-Berlin</a></h1>
-               <p class="site-description">Meetup every 2<sup>nd</sup> Thursday of month</p>
-             </div>
-             <nav>
-               <a href="{{ site.baseurl }}/">Home</a>
-               <a href="https://www.meetup.com/Elixir-Berlin/">About</a>
-             </nav>
-           </header>
-         </div>
-       </div>
+          <div class="container">
+            <header class="masthead clearfix">
+              <nav>
+                <a href="https://www.meetup.com/Elixir-Berlin/">The Meetup</a>
+                <a href="https://github.com/elixir-berlin/planning/issues/">Apply as Speaker</a>
+                <a href="https://github.com/elixir-berlin/elixir-companies-berlin">Company Register</a>
+                <a href="https://github.com/elixir-berlin/elixir-berlin.github.io">Change this Site</a>
+              </nav>
+            </header>
+          </div>
+        </div>
 
         <div class="container">
-            <div class="space-small"></div>
+          <div class="space-small"></div>
 
-            <div class="centered">
-              <ul class="ch-grid">
-                <li>
-                    <div class="ch-item ch-img-1">
-                        <div class="ch-info-wrap">
-                            <div class="ch-info">
-                                <div class="ch-info-front ch-img-1"></div>
-                                <div class="ch-info-back">
-                                    <h3>{{site.name}}</h3>
-                                    <p></br><a href="https://www.meetup.com/Elixir-Berlin/">Meet us!</a></p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </li>
-            </ul>
+          <center>
+            <a class="ch-info" href="https://www.meetup.com/Elixir-Berlin/">
+              <h1 class="site-name">Elixir Berlin</h1>
+              <p>Every 2nd Thursday of the month</p>
+            </a>
+          </center>
+
+          <div class="space-medium"></div>
         </div>
+      </div>
 
-             <div class="space-medium"></div>
-
-        </div>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-            <div class="svg-icon">
-          {% include svg-icons.html %}
-            </div>
-        </footer>
+      <div class="twitter">
+        <a class="twitter-timeline" data-width="300" data-height="570" data-theme="light" data-link-color="#8476ad"
+          href="https://twitter.com/ElixirBerlin">Loading tweets by ElixirBerlin...</a>
+        <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
+  </div>
 
-    {% include analytics.html %}
-  </body>
+  <div id="main" role="main" class="container">
+    {{ content }}
+  </div>
+
+  <div class="wrapper-footer">
+    <div class="container">
+      <footer class="footer">
+        <div class="svg-icon">
+          {% include svg-icons.html %}
+        </div>
+      </footer>
+    </div>
+  </div>
+
+  {% include analytics.html %}
+</body>
+
 </html>
