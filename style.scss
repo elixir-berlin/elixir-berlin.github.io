@@ -181,7 +181,7 @@ nav {
     color: $white;
     text-align: right;
     letter-spacing: 1px;
-    opacity: 80;
+    opacity: 80%;
     font-size: 90%;
     text-transform: lowercase;
     
@@ -236,6 +236,14 @@ footer {
   padding: 20px 0;
   text-align: center;
   background-color: black;
+
+  .coc {
+    margin-top: 0.5em;
+    font-size: 80%;
+    a {
+      text-decoration: underline;
+    }
+  }
 }
 
 sup {

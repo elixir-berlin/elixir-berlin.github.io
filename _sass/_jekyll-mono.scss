@@ -130,4 +130,11 @@ a.ch-info {
 	.twitter {
 		margin-top: 1.5em;
 	}
+
+}
+
+@media only screen and (max-width: 600px) {
+	.side-by-side .twitter {
+	  display: none;
+	}
 }
