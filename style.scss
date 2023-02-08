@@ -167,13 +167,13 @@ img {
 nav {
   float: right;
   font-family: $helveticaNeue;
-  font-size: 22px;
+  font-size: 26px;
 
   @include mobile {
     float: none;
     margin-top: 9px;
     display: block;
-    font-size: 16px;
+    font-size: 24px;
   }
 
   a {
@@ -183,11 +183,18 @@ nav {
     letter-spacing: 1px;
     opacity: 80%;
     font-size: 90%;
+    word-spacing: 80%;
     text-transform: lowercase;
+    white-space: nowrap;
+    word-spacing: -0.1em;
     
     @include mobile {
       margin: 0 10px;
       color: $white;
+    }
+
+    &:hover {
+      text-decoration: underline;
     }
   }
 }
