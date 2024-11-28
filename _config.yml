@@ -9,6 +9,8 @@ name: Berlin.ex
 description: Elixir User Group in Berlin
 
 
+include: [".well-known"]
+
 #
 # Flags below are optional
 #
